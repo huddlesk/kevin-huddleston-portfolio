@@ -158,7 +158,20 @@
 
     /* Sections */
     section {
-      padding: 4rem 0 0;
+      padding: 2rem 0 0;
+    }
+
+    /* Add a separator line between sections */
+    section + section {
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+    /* The hero section (#top) has its own padding via the .hero class.
+       Remove the generic section top padding to avoid double-padding. */
+    #top {
+      padding-top: 0;
     }
 
     h1, h2, h3 {
@@ -189,7 +202,7 @@
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
       gap: 2.5rem;
-      padding-top: 3rem;
+      padding-top: 1.5rem;
       align-items: center;
     }
 
@@ -693,7 +706,7 @@
       }
 
       .hero {
-        padding-top: 2.3rem;
+        padding-top: 1.5rem;
       }
 
       .hero-card {
@@ -712,6 +725,11 @@
 
       section {
         padding-top: 3rem;
+      }
+
+      section + section {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
       }
     }
   </style>
@@ -732,10 +750,12 @@
           <a href="#contact">Contact</a>
         </div>
       </nav>
+      <!-- Theme toggle 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
         <span>Theme</span>
         <span aria-hidden="true">⭑</span>
       </button>
+      -->
     </div>
   </header>
 
@@ -746,12 +766,13 @@
         <div>
           <p class="hero-title-line">Release & Transition Manager · DevOps-minded Leader</p>
           <h1 id="hero-title" class="hero-heading">
-            Shipping <span class="hero-accent">regulated software</span> with confidence.
+            Shipping <span class="hero-accent">software in regulated environments</span> with confidence.
           </h1>
           <p class="hero-summary">
-            Release and transition manager with <strong>27+ years of software delivery</strong> across healthcare and consumer electronics, including <strong>13 years focused on release and service transition</strong> in GxP-validated environments.[file:1]
+            Release and transition manager with <strong>27+ years of software delivery</strong> across healthcare and consumer electronics, including <strong>13 years focused on release and service transition</strong> in GxP-validated environments.
           </p>
           <div class="hero-actions">
+            <!--
             <a href="#contact">
               <button class="btn-primary" type="button">
                 Let’s talk about your releases →
@@ -762,16 +783,17 @@
                 View experience
               </button>
             </a>
+            -->
           </div>
           <div class="hero-meta">
             <div class="hero-chip">
-              <span>55+</span> releases with zero release-related defects[file:1]
+              <span>55+</span> releases with zero release-related defects
             </div>
             <div class="hero-chip">
-              <span>800%</span> faster infra startup via Python automation[file:1]
+              <span>800%</span> faster infra startup via Python automation
             </div>
             <div class="hero-chip">
-              <span>71%</span> fewer compliance docs in Appian service transition[file:1]
+              <span>71%</span> fewer compliance docs in Appian service transition
             </div>
           </div>
         </div>
@@ -793,12 +815,12 @@
             <div class="metric-card">
               <div class="metric-label">Industry domains</div>
               <div class="metric-value">Healthcare · MedTech · Consumer</div>
-              <div class="metric-tag">21 CFR Part 11 · eMDR · CAPA[file:1]</div>
+              <div class="metric-tag">21 CFR Part 11 · eMDR · CAPA</div>
             </div>
             <div class="metric-card">
               <div class="metric-label">Cloud & DevOps</div>
               <div class="metric-value">AWS · Azure · OCI</div>
-              <div class="metric-tag">Terraform · Ansible · Azure DevOps[file:1]</div>
+              <div class="metric-tag">Terraform · Ansible · Azure DevOps</div>
             </div>
           </div>
           <div class="hero-tags" aria-label="Key capabilities">
@@ -817,7 +839,7 @@
       <p class="section-label">Skills</p>
       <h2 id="skills-title" class="section-title">What Kevin works with</h2>
       <p class="section-subtitle">
-        A blend of release management, project leadership, cloud infrastructure, and hands-on scripting to keep complex, regulated systems shipping safely and predictably.[file:1][web:9]
+        A blend of release management, project leadership, cloud infrastructure, and hands-on scripting to keep complex, regulated systems shipping safely and predictably.
       </p>
 
       <div class="skills-grid">
@@ -904,7 +926,7 @@
       <p class="section-label">Experience</p>
       <h2 id="experience-title" class="section-title">Where Kevin has delivered</h2>
       <p class="section-subtitle">
-        Long-term delivery roles in healthcare and consumer electronics, with a strong focus on enterprise platforms, service transition, and process improvement.[file:1]
+        Long-term delivery roles in healthcare and consumer electronics, with a strong focus on enterprise platforms, service transition, and process improvement.
       </p>
 
       <div class="timeline">
@@ -919,12 +941,12 @@
           </div>
           <div class="timeline-body">
             <p>
-              Leads software release and service transition for GxP-validated platforms, ensuring reliable handover of new and changed services into IT operations.[file:1]
+              Leads software release and service transition for GxP-validated platforms, ensuring reliable handover of new and changed services into IT operations.
             </p>
             <ul class="timeline-list">
-              <li>Delivered 55+ software releases on time with no release-related defects.[file:1]</li>
-              <li>Owned GDPR and non-functional compliance requirements as IT product owner in a regulated environment.[file:1]</li>
-              <li>Managed post-release warranty support with end-to-end issue ownership and client-facing triage.[file:1]</li>
+              <li>Delivered 55+ software releases on time with no release-related defects.</li>
+              <li>Owned GDPR and non-functional compliance requirements as IT product owner in a regulated environment.</li>
+              <li>Managed post-release warranty support with end-to-end issue ownership and client-facing triage.</li>
             </ul>
           </div>
         </article>
@@ -940,12 +962,12 @@
           </div>
           <div class="timeline-body">
             <p>
-              Managed projects and developed solutions on SharePoint and Lotus Notes to support global sales, service, and hospital integration programs.[file:1]
+              Managed projects and developed solutions on SharePoint and Lotus Notes to support global sales, service, and hospital integration programs.
             </p>
             <ul class="timeline-list">
-              <li>Delivered a tactical planning tool on time and on budget to support global sales and service restructuring.[file:1]</li>
-              <li>Resolved near-Go-Live gaps for a hospital integration project under tight deadlines.[file:1]</li>
-              <li>Led large-scale migration and redesign of Lotus Notes applications to SharePoint across multiple business units.[file:1]</li>
+              <li>Delivered a tactical planning tool on time and on budget to support global sales and service restructuring.</li>
+              <li>Resolved near-Go-Live gaps for a hospital integration project under tight deadlines.</li>
+              <li>Led large-scale migration and redesign of Lotus Notes applications to SharePoint across multiple business units.</li>
             </ul>
           </div>
         </article>
@@ -961,12 +983,12 @@
           </div>
           <div class="timeline-body">
             <p>
-              Provided Lotus Notes application consulting and led a team delivering workflow and intranet solutions across Philips sectors.[file:1]
+              Provided Lotus Notes application consulting and led a team delivering workflow and intranet solutions across Philips sectors.
             </p>
             <ul class="timeline-list">
-              <li>Designed a timesheet workflow that saved an estimated 780 overtime hours per year.[file:1]</li>
-              <li>Migrated Domino intranet sites to a standard content platform, saving ~$7,600 over vendor migration costs.[file:1]</li>
-              <li>Created workflow solutions that cut new customer setup time from months to days.[file:1]</li>
+              <li>Designed a timesheet workflow that saved an estimated 780 overtime hours per year.</li>
+              <li>Migrated Domino intranet sites to a standard content platform, saving ~$7,600 over vendor migration costs.</li>
+              <li>Created workflow solutions that cut new customer setup time from months to days.</li>
             </ul>
           </div>
         </article>
@@ -982,12 +1004,12 @@
           </div>
           <div class="timeline-body">
             <p>
-              Contributed to application development and Domino administration while delivering automation that reduced cycle times and costs.[file:1]
+              Contributed to application development and Domino administration while delivering automation that reduced cycle times and costs.
             </p>
             <ul class="timeline-list">
-              <li>Built a price-change approval workflow that reduced cycle time from weeks to days.[file:1]</li>
-              <li>Developed upgrade tools supporting up to 250 Lotus Notes client upgrades per day, coming in over $150K under budget.[file:1]</li>
-              <li>Created directory and intranet tools that eliminated over 100 labor hours and $24K in annual print costs.[file:1]</li>
+              <li>Built a price-change approval workflow that reduced cycle time from weeks to days.</li>
+              <li>Developed upgrade tools supporting up to 250 Lotus Notes client upgrades per day, coming in over $150K under budget.</li>
+              <li>Created directory and intranet tools that eliminated over 100 labor hours and $24K in annual print costs.</li>
             </ul>
           </div>
         </article>
@@ -997,9 +1019,9 @@
     <!-- Impact / Case Studies -->
     <section id="impact" aria-labelledby="impact-title">
       <p class="section-label">Impact</p>
-      <h2 id="impact-title" class="section-title">A few releases Kevin is proud of</h2>
+      <h2 id="impact-title" class="section-title">A few achievements Kevin is proud of</h2>
       <p class="section-subtitle">
-        Selected examples that show how automation, service design, and structured release management translate into tangible outcomes for the business.[file:1][web:13]
+        Selected examples that show how automation, service design, and structured release management translate into tangible outcomes for the business.
       </p>
 
       <div class="cards-grid">
@@ -1008,7 +1030,7 @@
           <h3 class="impact-title">Python release tooling cuts downtime by 3 hours</h3>
           <p class="impact-meta">Cognizant · Healthcare platform · Python · Infrastructure orchestration</p>
           <p>
-            Designed Python-based automation that streamlined application infrastructure startup and shutdown, boosting speed by roughly 800% and reducing business downtime by around three hours per release window.[file:1]
+            Designed Python-based automation that streamlined application infrastructure startup and shutdown, boosting speed by roughly 800% and reducing business downtime by around three hours per release window.
           </p>
         </article>
 
@@ -1017,7 +1039,7 @@
           <h3 class="impact-title">71% documentation reduction in Appian service transition</h3>
           <p class="impact-meta">Cognizant · Appian · ITSM / ITIL</p>
           <p>
-            Reworked IT service design for Appian-based services, trimming compliance documentation by 71% (221 documents) across 14 releases for six applications while maintaining regulatory coverage.[file:1]
+            Reworked IT service design for Appian-based services, trimming compliance documentation by 71% (221 documents) across 14 releases for six applications while maintaining regulatory coverage.
           </p>
         </article>
 
@@ -1026,18 +1048,19 @@
           <h3 class="impact-title">Four new global applications for shared services</h3>
           <p class="impact-meta">Cognizant · Shared services · ITIL lifecycle</p>
           <p>
-            Designed and implemented four global application services for business-critical processes, embedding change, incident, release, problem, request, and knowledge management from day one.[file:1]
+            Designed and implemented four global application services for business-critical processes, embedding change, incident, release, problem, request, and knowledge management from day one.
           </p>
         </article>
-
+        <!--
         <article class="impact-card">
           <div class="impact-tag">Workflow</div>
           <h3 class="impact-title">Timesheet workflow saves 780 overtime hours annually</h3>
           <p class="impact-meta">Philips · Payroll · Lotus Notes</p>
           <p>
-            Delivered a bi-weekly timesheet workflow two months ahead of schedule, reducing payroll processing effort by an estimated 780 overtime hours per year.[file:1]
+            Delivered a bi-weekly timesheet workflow two months ahead of schedule, reducing payroll processing effort by an estimated 780 overtime hours per year.
           </p>
         </article>
+      -->
       </div>
     </section>
 
@@ -1046,16 +1069,16 @@
       <p class="section-label">AI & Automation</p>
       <h2 id="ai-title" class="section-title">Bringing generative AI into validated environments</h2>
       <p class="section-subtitle">
-        Recently, Kevin has focused on integrating generative AI safely into regulated software and using automation to simplify complex release processes.[file:1][web:13]
+        Recently, Kevin has focused on integrating generative AI safely into regulated software and using automation to simplify complex release processes.
       </p>
 
       <div class="ai-section">
         <div>
           <p class="ai-note">
-            At a healthcare client, Kevin created a proof of concept, early prototype, and validation approach for the first generative AI solution approved within a validated software package.[file:1]
+            At a healthcare client, Kevin created a proof of concept, early prototype, and validation approach for the first generative AI solution approved within a validated software package.
           </p>
           <p class="ai-note">
-            This work balanced innovation with regulatory expectations, covering traceability, risk controls, and documentation to make AI adoption acceptable to quality and compliance stakeholders.[file:1][web:17]
+            This work balanced innovation with regulatory expectations, covering traceability, risk controls, and documentation to make AI adoption acceptable to quality and compliance stakeholders.
           </p>
           <div class="ai-chip-row">
             <span class="ai-chip">Use cases & requirements</span>
@@ -1066,7 +1089,7 @@
         </div>
         <div>
           <p class="ai-note">
-            Kevin also uses tools like ChatGPT, GitHub Copilot, semantic search, and cloud platforms such as Azure and SageMaker to accelerate analysis, automation, and documentation while respecting quality system requirements.[file:1][web:3]
+            Kevin also uses tools like ChatGPT, GitHub Copilot, semantic search, and cloud platforms such as Azure and SageMaker to accelerate analysis, automation, and documentation while respecting quality system requirements.
           </p>
           <div class="ai-chip-row">
             <span class="ai-chip">ChatGPT</span>
@@ -1084,7 +1107,7 @@
       <p class="section-label">Credentials</p>
       <h2 id="credentials-title" class="section-title">Certifications & education</h2>
       <p class="section-subtitle">
-        A mix of project, service, and cloud foundations supports Kevin’s hands-on experience as a release and transition manager.[file:1]
+        A mix of project, service, and cloud foundations supports Kevin’s hands-on experience as a release and transition manager.
       </p>
 
       <div class="cert-grid">
@@ -1116,19 +1139,17 @@
       <p class="section-label">Contact</p>
       <h2 id="contact-title" class="section-title">Let’s talk about your next release</h2>
       <p class="section-subtitle">
-        Whether it is stabilizing a release train, transitioning a new service, or exploring AI in a regulated environment, Kevin is open to discussing how he can help.[file:1][web:16]
+        Whether it is stabilizing a release train, transitioning a new service, or exploring AI in a regulated environment, Kevin is open to discussing how he can help.
       </p>
 
       <div class="contact-grid">
         <div class="contact-info">
           <p><strong>Location:</strong> Knoxville, Tennessee, USA</p>
           <p><strong>Email:</strong> <a href="mailto:kevin.p.huddleston@gmail.com">kevin.p.huddleston@gmail.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">View profile</a></p>
-          <p class="form-note">
-            This form is a simple front-end demonstration. Wire it to your email provider or an API to make it fully functional, and always respect privacy and accessibility best practices.[web:8][web:11]
-          </p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kevin-huddleston-57b89039a/" target="_blank" rel="noreferrer">View profile</a></p>
+          
         </div>
-
+        <!--
         <form aria-label="Contact form">
           <div class="form-row">
             <div>
@@ -1152,6 +1173,7 @@
             Send message
           </button>
         </form>
+      -->
       </div>
     </section>
 
@@ -1208,4 +1230,3 @@
   </script>
 </body>
 </html>
-
