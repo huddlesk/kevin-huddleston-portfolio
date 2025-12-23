@@ -571,28 +571,28 @@
     }
 
     .card-actions {
-      position: absolute;
+      
       top: 1.2rem;
       right: 1.2rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      align-items: flex-end;
+      align-items: flex-start;
     }
 
     .card-repo-btn {
       font-size: 0.75rem;
       padding: 0.35rem 0.8rem;
       border-radius: 999px;
-      border: 1px solid #f97316;
-      background: #f97316;
+      border: 1px solid #a14401;
+      background: #a14401;
       color: #ffffff;
       transition: all var(--transition-fast);
     }
 
     .card-repo-btn:hover {
-      background: #ea580c;
-      border-color: #ea580c;
+      background: #c95503;
+      border-color: #c95503;
       transform: translateY(-1px);
       box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
     }
@@ -968,13 +968,8 @@
             <a href="https://github.com/huddlesk/iac-aws-portfolio" class="card-repo-btn" target="_blank">
               View Repository
             </a>
-          </div>
+          </div>&nbsp
         <div class="impact-card">
-          <div class="card-actions">
-            <a href="https://github.com/huddlesk/iac-aws-portfolio/tree/main/terraform" class="card-repo-btn" target="_blank">
-              View Terraform Root
-            </a>
-          </div>
           <div class="impact-tag">Terraform</div>
           <h3 class="impact-title">Terraform AWS Infrastructure</h3>
           <div class="impact-meta">
@@ -987,14 +982,14 @@
               <li>Configured static hosting S3 bucket.</li>
             </ul>
           </div>
+          <div class="card-actions">
+            <a href="https://github.com/huddlesk/iac-aws-portfolio/tree/main/terraform" class="card-repo-btn" target="_blank">
+              View Terraform Root
+            </a>
+          </div>
         </div>
       </br>
         <div class="impact-card">
-          <div class="card-actions">
-            <a href="https://github.com/huddlesk/iac-aws-portfolio/tree/main/ansible" class="card-repo-btn" target="_blank">
-              View Ansible Root
-            </a>
-          </div>
           <div class="impact-tag">Ansible</div>
           <h3 class="impact-title">Ansible Playbooks</h3>
           <div class="impact-meta">
@@ -1006,6 +1001,11 @@
               <li>Clone Kevin's static portfolio site and configure nginx to serve it</li>
               <li>Install other prerequisties as required</li>
             </ul>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/huddlesk/iac-aws-portfolio/tree/main/ansible" class="card-repo-btn" target="_blank">
+              View Ansible Root
+            </a>
           </div>
       </div>
     </div>
